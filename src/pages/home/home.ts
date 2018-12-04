@@ -49,8 +49,12 @@ export class HomePage {
       })
     })
 
+
   })
   
+  geolocation.getCurrentPosition().then(pos => {
+    this.latlng = pos.coords.latitude + "," + pos.coords.longitude;
+  })
 
   auth.authState.subscribe(user => {
     if(user != undefined){
