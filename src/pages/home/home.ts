@@ -43,18 +43,11 @@ export class HomePage {
 
   },err => {
 
-    androidPermissions.requestPermission(androidPermissions.PERMISSION.ACCESS_FINE_LOCATION).then( ()=> {
-      geolocation.getCurrentPosition().then(pos => {
-        this.latlng = pos.coords.latitude + "," + pos.coords.longitude;
-      })
-    })
+    androidPermissions.requestPermission(androidPermissions.PERMISSION.ACCESS_FINE_LOCATION);
 
 
   })
   
-  geolocation.getCurrentPosition().then(pos => {
-    this.latlng = pos.coords.latitude + "," + pos.coords.longitude;
-  })
 
   auth.authState.subscribe(user => {
     if(user != undefined){
@@ -73,6 +66,27 @@ export class HomePage {
     }
   })
   
+  }
+
+  ngOnInit(){
+
+   var index = 1;
+
+    var inter = setInterval(done => {
+
+      if(index >= 15){
+
+        this.geolocation.getCurrentPosition().then(pos => {
+          this.latlng = pos.coords.latitude + "," + pos.coords.longitude;
+        })
+
+      clearInterval(inter)
+
+      }
+
+      index ++;
+
+    },1000)
   }
 
   logout(){
