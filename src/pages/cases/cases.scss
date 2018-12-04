@@ -1,0 +1,49 @@
+page-cases {
+
+}
+
+page-cases .bar-button-default-md {
+    color: #fff !important;
+    
+}
+
+page-cases .toolbar-background-md {
+    background: #EF5777!important;
+}
+
+page-cases .mheader {
+    display: flex;
+    background: #EF5777 !important;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+
+page-cases .mheader  > div {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+page-cases .mheader .logo img{
+    width: 120px;
+    height: 120px;
+}
+
+
+page-cases .mheader .text p {
+    color: #FFF;
+    font-size: 50px;
+}
+
+page-cases .mcontent .inputs .label-md-primary,page-cases .item-input .label-md-primary {
+    color: #EF5777 !important;
+}
+
+page-cases button {
+    background: #EF5777 !important;
+    padding: 25px !important;
+}

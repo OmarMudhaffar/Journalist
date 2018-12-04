@@ -1,0 +1,49 @@
+page-login {
+
+}
+
+
+
+page-login .mcontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+page-login .mcontent .father {
+    width: 100%;
+    text-align: center;
+}
+
+page-login .mcontent .logo img {
+    width: 100%;
+    height: 200px;
+}
+
+page-login .mcontent button {
+    margin-top: 30px;
+    padding: 5px 55px;
+}
+
+
+input {
+    border: 0;
+width: 100%;
+color: #000;
+
+}
+
+page-login .mcontent .inputs .label-md-primary,page-login .item-input .label-md-primary {
+    color: #939393;
+}
+
+.item-md {
+    margin-bottom: 15px !important;
+    padding-left: 0 !important;
+
+}
+
+page-login .mcontent p {
+    color: #EF5777;
+}

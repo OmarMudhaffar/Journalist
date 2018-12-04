@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.394 39.435">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_3365" data-name="Group 3365" transform="translate(-254 -491.071)">
+    <path id="ic_person_24px" class="cls-1" d="M23.717,23.717a9.859,9.859,0,1,0-9.859-9.859A9.856,9.856,0,0,0,23.717,23.717Zm0,4.929C17.137,28.647,4,31.949,4,38.505v4.929H43.435V38.505C43.435,31.949,30.3,28.647,23.717,28.647Z" transform="translate(250 487.071)"/>
+    <path id="ic_sort_24px" class="cls-1" d="M3,22.262h8.131v-2.71H3ZM3,6V8.71H27.394V6Zm0,9.486H19.262v-2.71H3Z" transform="translate(285 490.738)"/>
+  </g>
+</svg>

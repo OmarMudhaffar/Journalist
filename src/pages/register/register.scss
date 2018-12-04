@@ -1,0 +1,50 @@
+page-register {
+
+}
+
+
+page-register .mcontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+page-register .mcontent .father {
+    width: 100%;
+    text-align: center;
+}
+
+page-register .mcontent .logo img {
+    width: 100%;
+    height: 200px;
+}
+
+page-register .mcontent button {
+    margin-top: 30px;
+    padding: 5px 55px;
+}
+
+page-register .mcontent .inputs input {
+    color: #939393;
+    color: #000;
+}
+
+page-register .mcontent .inputs .label-md-primary,page-register  .item-input  .label-md-primary {
+    color: #939393;
+}
+
+page-register .mcontent button {
+    background: #EF5777 !important;
+}
+page-register .mcontent p {
+    color: #488aff;
+}
+
+
+
+page-register .bar-button-default-md {
+    color: #EF5777 !important;
+    
+}

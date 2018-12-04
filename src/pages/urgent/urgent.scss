@@ -1,0 +1,49 @@
+page-urgent {
+
+}
+
+page-urgent .bar-button-default-md {
+    color: #fff !important;
+    
+}
+
+page-urgent .toolbar-background-md {
+    background: #3DCA61 !important;
+}
+
+page-urgent .mheader {
+    display: flex;
+    background: #3DCA61 !important;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+
+page-urgent .mheader  > div {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+page-urgent .mheader .logo img{
+    width: 120px;
+    height: 120px;
+}
+
+
+page-urgent .mheader .text p {
+    color: #FFF;
+    font-size: 50px;
+}
+
+page-urgent .mcontent .inputs .label-md-primary,page-urgent .item-input .label-md-primary {
+    color: #3DCA61 !important;
+}
+
+page-urgent button {
+    background: #3DCA61 !important;
+    padding: 25px !important;
+}

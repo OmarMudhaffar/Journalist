@@ -1,0 +1,47 @@
+<ion-header>
+
+    <ion-navbar>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content>
+ 
+  <div class="upper">
+
+
+        <div class="mcontent">
+        
+        <div class="father">
+        
+        <div class="logo">
+          <img src="assets/imgs/register.svg"/>
+        </div>
+        
+        <div class="inputs">
+        
+            <ion-list padding>
+        
+          <ion-item >
+            <input #memail type="email" placeholder="E-mail">
+          </ion-item>
+        
+          <ion-item >
+              <input type="password" #mpass placeholder="Password">
+            </ion-item>
+        
+            <button ion-button  (click)="register(memail.value,mpass.value)">Register</button>
+           <p (click)="login()" >Login</p>
+        </ion-list>
+        
+        
+        </div>
+        
+        </div>
+        
+        </div>
+
+  </div>
+    
+    </ion-content>
+    

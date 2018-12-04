@@ -1,0 +1,67 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<div class="logo">
+
+<img src="assets/imgs/prof.svg">
+
+</div>
+
+
+<ion-list>
+
+    <ion-item >
+        <input #name [value]="nameq" placeholder="Full name : ">
+      </ion-item>
+
+      
+    <ion-item >
+        <input #phone type="number" [value]="phoneq" placeholder="Phone-number :">
+      </ion-item>
+
+      <ion-item >
+          <input #gendert  readonly [value]="gender" (click)="genderfun()" placeholder="Gender :">
+        </ion-item>
+
+    <ion-item >
+        <input #date type="date" [value]="dateq" placeholder="Birthday : ">
+      </ion-item>
+
+      
+    <ion-item >
+        <input #city [value]="selectValue" readonly (click)="presentActionSheet()" placeholder="City :">
+      </ion-item>
+
+      
+    <ion-item >
+        <input #company [value]="companyq" placeholder="Organization/Company : ">
+      </ion-item>
+
+      
+    <ion-item >
+        <input #more [value]="moreq" placeholder="More : ">
+      </ion-item>
+
+
+
+      <ion-item >
+          <button ion-button full (click)="edit(name.value,phone.value,gendert.value,date.value,city.value,company.value,more.value)" >edit profile</button>
+        </ion-item>
+  
+
+</ion-list>
+
+</ion-content>

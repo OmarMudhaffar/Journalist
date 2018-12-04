@@ -1,14 +1,42 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<div class="upper">
+    <div class="logout" ><ion-icon name="power" (click)="logout()"  item-end></ion-icon></div>
+    <div class="set"> <ion-icon name="settings" item-start (click)="settings()"></ion-icon></div>
+
+</div>
+
+<div class="gps">
+<p>GPS : {{latlng}} </p>
+</div>
+
+<div class="sos" (click)="sos()" >
+<div class="soslogo">
+  <img src="assets/imgs/sos.svg">
+</div>
+<div class="txtsos">SOS</div>
+</div>
+
+<div class="sections">
+
+<div class="argent" (click)="urgent()">
+<img src="assets/imgs/argent.svg">
+</div>
+
+<div class="sectiontwo">
+
+<div class="profile" (click)="profile()">
+    <img src="assets/imgs/profile.svg">
+
+</div>
+
+<div class="cases" (click)="cases()">
+    <img src="assets/imgs/cases.svg">
+
+</div>
+
+</div>
+
+</div>
+
 </ion-content>

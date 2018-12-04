@@ -1,0 +1,61 @@
+page-settings {
+
+}
+
+page-settings .settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+page-settings .settings img {
+    width: 150px;
+    height: 150px;;
+}
+
+page-settings .settings > div {
+    width: 100%;
+    text-align: center;
+}
+
+page-settings .father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+page-settings .father .contentf {
+    width: 100%;
+}
+
+page-settings .settings > div p {
+    color: #0fbcf9;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+page-settings .father .contentf .item-md {
+    margin-bottom: 40px;
+}
+
+page-settings .father .contentf button {
+    background: #0fbcf9;
+    margin-top: 30px;
+}
+
+page-settings .mcontent .inputs .label-md-primary,page-settings .item-input .label-md-primary  {
+    color: #0fbcf9 !important;
+}
+
+page-settings .bar-button-default-md {
+    color: #0fbcf9 !important;
+    
+}
+
+page-settings button:last-child {
+    background: #0fbcf9 !important;
+    padding: 20px !important;
+    }

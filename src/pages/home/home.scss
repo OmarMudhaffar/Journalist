@@ -1,3 +1,110 @@
 page-home {
 
 }
+
+
+page-home .upper{
+display: flex;
+color: #488aff;
+height: 5%;
+margin-bottom: 6%;
+}
+
+page-home .upper > div {
+    width: 100%;
+    font-size: 25px;
+}
+
+page-home .set {
+    text-align: right
+}
+
+page-home .gps{
+    margin-bottom: 6%;
+    background: #9099A7;
+padding: 15px;
+font-size: 16px;
+font-weight: bold;
+height: 12%;
+display: flex;
+align-items: center;
+color: #FFF;
+}
+
+page-home .sos {
+    margin-bottom: 6%;
+    width: 100%;
+    display: flex;
+    background: #F37459;
+    height: 40%;
+}
+
+page-home .sos > div {
+    width: 100%;
+    padding: 20px;
+}
+
+page-home .sos .soslogo img{
+height: 100%;
+width: 100%;
+}
+
+
+page-home .sos .txtsos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #FFF;
+    font-size: 50px;
+}
+
+page-home .sections {
+    display: flex;
+    height: 30%;
+}
+
+page-home .sectiontwo {
+    width: 100%;
+}
+
+page-home .sections .argent {
+    width: 100%;
+    background: #3DCA61;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-right: 10px;
+}
+
+page-home .sections .argent img {
+    width: 50%;
+    height: 50%;
+}
+
+page-home .sectiontwo .profile {
+    background: #0FBCF9;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+page-home .sections .profile img {
+    width: 50%;
+    height: 50%;
+}
+
+page-home .sectiontwo .cases {
+    background: #EF5777;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50%;
+}
+
+page-home .sections .cases img {
+    width: 50%;
+    height: 50%;
+}
