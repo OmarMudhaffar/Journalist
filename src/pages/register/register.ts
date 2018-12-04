@@ -52,7 +52,7 @@ export class RegisterPage {
         this.db.list("users").push({
           email:email,
           name:"",
-          phone:0,
+          phone:"",
           gender:"",
           date:"",
           city:"",
