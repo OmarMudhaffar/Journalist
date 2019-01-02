@@ -47,3 +47,17 @@ page-login .mcontent .inputs .label-md-primary,page-login .item-input .label-md-
 page-login .mcontent p {
     color: #EF5777;
 }
+
+page-login .info {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    color: #01bbd3;
+}
+
+page-login .mcontent {
+    background-image: url('../assets/imgs/login.png');
+    background-size: cover;
+    background-position: center bottom;
+}

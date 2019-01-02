@@ -48,6 +48,7 @@ export class SettingsPage {
       duration:3000
     });
     toast.present();
+   this.navCtrl.pop()
    })
   }
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
 import { AngularFireDatabase } from '@angular/fire/database';
 import * as $ from 'jquery'
 
@@ -27,7 +27,7 @@ export class CasesPage {
   email
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public db : AngularFireDatabase,public toast : ToastController) {
+    public db : AngularFireDatabase,public toast : ToastController,public load : LoadingController) {
 
       this.nameq = navParams.get("name");
       this.phoneq = navParams.get("phone");
@@ -44,10 +44,16 @@ export class CasesPage {
     console.log('ionViewDidLoad CasesPage');
   }
 
-  save(problem,detail){
-   
-    if(detail.lenght > 0 && problem.length > 0){
 
+  cases(pro,de){
+
+    var load = this.load.create({
+      content:"Sending case .."
+    })
+    
+    if(pro.length > 0 && de.length > 0){
+
+  load.present();
       this.db.list("cases").push({
         cityq:this.cityq,
         gender:this.gender,
@@ -56,20 +62,26 @@ export class CasesPage {
         dateq:this.dateq,
         companyq:this.companyq,
         moreq:this.moreq,
-        detail:detail,
-        problem:problem,
+        detail:de,
+        problem:pro,
         email:this.email
        }).then( ()=> {
+
          $("input").val("");
+        load.dismiss();
+
        this.toast.create({
-         message:"Your urgent has been sent",
+         message:"Your case has been sent",
          duration:3000
        }).present();
-       })
        this.navCtrl.pop();
+
+
+       })
 
     }
 
-  }
+    }
+
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController, ToastController, LoadingController, AlertController } from 'ionic-angular';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
 import * as $ from 'jquery'
@@ -29,7 +29,8 @@ export class ProfilePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public ac : ActionSheetController,public db : AngularFireDatabase,
-    public auth : AngularFireAuth,public toast : ToastController) {
+    public auth : AngularFireAuth,public toast : ToastController,
+    public load : LoadingController,public alert : AlertController) {
     
     this.nameq = navParams.get("name");
     this.phoneq = navParams.get("phone");
@@ -97,6 +98,11 @@ export class ProfilePage {
 
   edit(name,phone,gendert,date,city,company,more){
 
+    var load = this.load.create({
+      content:"Update your profile .."
+    });
+
+
     this.db.list("users").update(this.key,{
       name:name,
       phone:phone,
@@ -107,12 +113,26 @@ export class ProfilePage {
       more:more,
     
     }).then( ()=> {
-      $("input").val("");
-      this.navCtrl.pop();
-     this.toast.create({
-       message:"Your profile has been updated",
-       duration:3000
-     }).present();
+      load.dismiss()
+
+     var toas = this.toast.create({
+        message:"Your profile has been updated",
+        duration:3000
+      });
+
+      toas.present();
+     this.navCtrl.pop()
+    }).catch( err => {
+      load.dismiss()
+
+      var alert = this.alert.create({
+        subTitle:"Error",
+        message:err.message,
+        buttons:["ok"]
+      });
+
+      alert.present()
+
     })
 
   }

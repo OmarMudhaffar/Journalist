@@ -22,6 +22,7 @@ import { UrgentPage } from '../pages/urgent/urgent';
 import { CasesPage } from '../pages/cases/cases';
 import { DNS } from '@ionic-native/dns';
 import { SMS } from '@ionic-native/sms';
+import { InfoPage } from '../pages/info/info';
 
 var config = {
   apiKey: "AIzaSyCE8wnGqnot2bvSngCoHNc6OpKaPDr2XU4",
@@ -37,12 +38,7 @@ var config = {
   declarations: [
     MyApp,
     HomePage,
-    LoginPage,
-    RegisterPage,
-    SettingsPage,
-    ProfilePage,
-    UrgentPage,
-    CasesPage
+ 
   ],
   imports: [
     BrowserModule,
@@ -61,7 +57,8 @@ var config = {
     RegisterPage,
     SettingsPage,
     UrgentPage,
-    CasesPage
+    CasesPage,
+    InfoPage
   ],
   providers: [
     StatusBar,

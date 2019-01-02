@@ -1,0 +1,101 @@
+page-info {
+
+}
+
+
+page-info .toolbar-background-md {
+    background: #01bbd3 !important;
+}
+
+page-info .toolbar-title-md {
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+
+    color: #FFF;
+}
+
+page-info .button-inner{
+    color: #FFF !important;
+}
+
+page-info .logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+page-info .logos > div {
+    width: 100%;
+}
+
+page-info .logos > div img {
+    width: 100%;
+}
+
+page-info p {
+    font-family: 'Cairo', sans-serif;
+text-align: justify;
+text-align: right;
+direction: rtl;
+}
+
+
+
+page-info .toolbar-title-md span{
+    float: right;
+}
+
+.list-header-md  {
+
+
+    margin-bottom: 5px;
+    border-top: 0;
+    margin-top: 21px;
+
+}
+
+page-info .label-md {
+    margin-bottom: 0px !important;
+
+}
+
+page-info .item-md  {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+page-info .item-md p {
+    text-align: right;
+}
+
+
+page-info .about 
+{
+    font-family: 'Cairo', sans-serif;
+    margin: 30px 20px;
+    text-align: justify;
+    direction: rtl;
+}
+
+page-info h2 {
+    font-family: 'Cairo', sans-serif;
+    color: #ea4335;
+    margin-top: 30px;
+    text-align: center;
+}
+
+page-info i {
+    color: #676767;
+    margin: 3px;
+}
+
+.item-md {
+    margin-bottom: 5px;
+}
+
+.item-md ion-icon[item-start] {
+    margin-bottom: 2px;
+    color: #676767;
+}

@@ -4,6 +4,7 @@ import * as $ from 'jquery'
 import { RegisterPage } from '../register/register';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { HomePage } from '../home/home';
+import { InfoPage } from '../info/info';
 
 
 /**
@@ -57,6 +58,10 @@ export class LoginPage {
         alert.present();
       })
     }
+  }
+
+  info(){
+    this.navCtrl.push(InfoPage);
   }
 
 }
